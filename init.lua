@@ -26,11 +26,6 @@ minetest.register_node(":stackslabs:bottom_slab" .. subname, {
 })
 end
 
--- Register stackslabs.
--- Node will be called stackslabs:top_slab_<subname>
-
-function stackslabs.register_top_slab(subname, recipeitem, groups, images, description, sounds)
-	groups.topslab = 1
 minetest.register_node(":stackslabs:top_slab" .. subname, {
 	description = description,
 	drawtype = "nodebox",
